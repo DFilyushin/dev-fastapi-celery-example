@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pythonproject"
+version = "0.1.0"
+description = ""
+authors = ["DFilyushin <Dmitriy.Filyushin@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.111.1"
+celery = {extras = ["redis"], version = "^5.4.0"}
+flower = "^2.0.1"
+uvicorn = "^0.30.1"
+redis = "^5.0.7"
+eventlet = "^0.36.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
